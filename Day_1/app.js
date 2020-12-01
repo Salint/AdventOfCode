@@ -11,7 +11,7 @@ console.log("First puzzle");
 outer_loop:
 for(let i = 0; i < array.length; i++) {
 
-	for(let j = 0; j < array.length; j++) {
+	for(let j = i; j < array.length; j++) {
 
 		if((Number(array[i]) + Number(array[j])) == 2020) {
 			console.log(Number(array[i]) * Number(array[j]));
@@ -26,9 +26,9 @@ console.log("Second puzzle");
 outer_loop:
 for(let i = 0; i < array.length; i++) {
 
-	for(let j = 0; j < array.length; j++) {
+	for(let j = i; j < array.length; j++) {
 
-		for(let k = 0; k < array.length; k++) {
+		for(let k = j; k < array.length; k++) {
 
 			if((Number(array[i]) + Number(array[j]) + Number(array[k])) == 2020) {
 				console.log(Number(array[i]) * Number(array[j]) * Number(array[k]));
