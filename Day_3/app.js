@@ -6,13 +6,13 @@ const lines = input.split("\r\n");
 
 let count = 0;
 
-let y = 0;
-for(let x = 1; x < lines.length; x+=2) {
+let x = 0;
+for(let y = 1; y < lines.length; y++) {
 
-	y+=1;
-	if(y >= lines[x].length) y = y - lines[x].length;
+	x+=3;
+	if(x >= lines[y].length) x = x - lines[y].length;
 
-	if(lines[x][y] == "#") {
+	if(lines[y][x] == "#") {
 		count++;
 	}
 
